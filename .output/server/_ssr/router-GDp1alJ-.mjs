@@ -143,10 +143,10 @@ var Route$2 = createRootRouteWithContext()({
 				rel: "stylesheet",
 				href: styles_default
 			},
-			{
+			{ 
 				rel: "icon",
-				href: "/favicon.ico",
-				type: "image/x-icon"
+				href: "/favicon.ico", 
+				type: "image/x-icon" 
 			},
 			{
 				rel: "preconnect",
