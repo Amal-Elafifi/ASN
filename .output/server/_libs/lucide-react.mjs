@@ -3,7 +3,7 @@ import { r as require_react } from "./react+tanstack__react-query.mjs";
 //#region node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.mjs
 var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -14,7 +14,7 @@ var mergeClasses = (...classes) => classes.filter((className, index, array) => {
 //#endregion
 //#region node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.mjs
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -23,7 +23,7 @@ var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLo
 //#endregion
 //#region node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.mjs
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -32,7 +32,7 @@ var toCamelCase = (string) => string.replace(/^([A-Z])|[\s-_]+(\w)/g, (match, p1
 //#endregion
 //#region node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.mjs
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -44,7 +44,7 @@ var toPascalCase = (string) => {
 //#endregion
 //#region node_modules/lucide-react/dist/esm/defaultAttributes.mjs
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -63,7 +63,7 @@ var defaultAttributes = {
 //#endregion
 //#region node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.mjs
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -75,7 +75,7 @@ var hasA11yProp = (props) => {
 //#endregion
 //#region node_modules/lucide-react/dist/esm/context.mjs
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -85,7 +85,7 @@ var useLucideContext = () => (0, import_react.useContext)(LucideContext);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/Icon.mjs
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -108,7 +108,7 @@ var Icon = (0, import_react.forwardRef)(({ color, size, strokeWidth, absoluteStr
 //#endregion
 //#region node_modules/lucide-react/dist/esm/createLucideIcon.mjs
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -124,7 +124,7 @@ var createLucideIcon = (iconName, iconNode) => {
 	return Component;
 };
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -150,7 +150,7 @@ var Anchor = createLucideIcon("anchor", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -163,7 +163,7 @@ var ArrowLeft = createLucideIcon("arrow-left", [["path", {
 	key: "x3x0zl"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -176,7 +176,7 @@ var ArrowUp = createLucideIcon("arrow-up", [["path", {
 	key: "x0mq9r"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -191,7 +191,7 @@ var Award = createLucideIcon("award", [["path", {
 	key: "1vp47v"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -249,7 +249,7 @@ var Calculator = createLucideIcon("calculator", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -259,7 +259,7 @@ var Check = createLucideIcon("check", [["path", {
 	key: "1gmf2c"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -269,7 +269,7 @@ var ChevronLeft = createLucideIcon("chevron-left", [["path", {
 	key: "1wnfg3"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -279,7 +279,7 @@ var ChevronRight = createLucideIcon("chevron-right", [["path", {
 	key: "mthhwq"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -307,7 +307,7 @@ var CircleAlert = createLucideIcon("circle-alert", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -322,7 +322,7 @@ var CircleCheck = createLucideIcon("circle-check", [["circle", {
 	key: "dzmm74"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -347,7 +347,7 @@ var ClipboardCheck = createLucideIcon("clipboard-check", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -373,7 +373,7 @@ var Earth = createLucideIcon("earth", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -393,7 +393,7 @@ var ExternalLink = createLucideIcon("external-link", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -413,7 +413,7 @@ var FileCheck = createLucideIcon("file-check", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -441,7 +441,7 @@ var FileText = createLucideIcon("file-text", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -454,7 +454,7 @@ var FolderCheck = createLucideIcon("folder-check", [["path", {
 	key: "6343dt"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -464,7 +464,7 @@ var Headphones = createLucideIcon("headphones", [["path", {
 	key: "1xhozi"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -486,7 +486,7 @@ var Info = createLucideIcon("info", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -496,7 +496,7 @@ var LoaderCircle = createLucideIcon("loader-circle", [["path", {
 	key: "13zald"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -514,7 +514,7 @@ var Lock = createLucideIcon("lock", [["rect", {
 	key: "fwvmzm"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -531,7 +531,7 @@ var Mail = createLucideIcon("mail", [["path", {
 	key: "izxlao"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -546,7 +546,7 @@ var MapPin = createLucideIcon("map-pin", [["path", {
 	key: "ilqhr7"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -566,7 +566,7 @@ var Menu = createLucideIcon("menu", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -576,7 +576,7 @@ var MessageCircle = createLucideIcon("message-circle", [["path", {
 	key: "1sd12s"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -604,7 +604,7 @@ var PackageCheck = createLucideIcon("package-check", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -628,7 +628,7 @@ var Package = createLucideIcon("package", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -638,7 +638,7 @@ var Phone = createLucideIcon("phone", [["path", {
 	key: "9njp5v"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -648,7 +648,7 @@ var Plane = createLucideIcon("plane", [["path", {
 	key: "1v9wt8"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -661,7 +661,7 @@ var Plus = createLucideIcon("plus", [["path", {
 	key: "s699le"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -674,7 +674,7 @@ var Send = createLucideIcon("send", [["path", {
 	key: "12cjpa"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -687,7 +687,7 @@ var ShieldCheck = createLucideIcon("shield-check", [["path", {
 	key: "dzmm74"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -715,7 +715,7 @@ var Ship = createLucideIcon("ship", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -735,7 +735,7 @@ var Stamp = createLucideIcon("stamp", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -761,7 +761,7 @@ var Target = createLucideIcon("target", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -774,7 +774,7 @@ var TrendingUp = createLucideIcon("trending-up", [["path", {
 	key: "1t1m79"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -800,7 +800,7 @@ var Users = createLucideIcon("users", [
 	}]
 ]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
@@ -813,7 +813,7 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 /**
-* @license lucide-react v1.24.0 - ISC
+* @license lucide-react v1.25.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
