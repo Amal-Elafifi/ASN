@@ -13,9 +13,9 @@ const services = [
 export function Footer() {
   return (
     <footer className="relative bg-navy text-white pt-20 pb-8 overflow-hidden">
-      <div className="absolute inset-0 opacity-10" aria-hidden>
-        <div className="absolute top-0 right-0 size-96 rounded-full bg-secondary blur-3xl" />
-        <div className="absolute bottom-0 left-0 size-96 rounded-full bg-accent blur-3xl" />
+      <div className="absolute inset-0 opacity-10 overflow-hidden" aria-hidden>
+        <div className="absolute top-0 right-0 size-72 rounded-full bg-secondary blur-3xl overflow-hidden" />
+        <div className="absolute bottom-0 left-0 size-72 rounded-full bg-accent blur-3xl overflow-hidden" />
       </div>
       <div className="container-asn relative">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">

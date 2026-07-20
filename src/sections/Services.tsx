@@ -52,17 +52,17 @@ export function Services() {
           {services.map((s, i) => (
             <Reveal key={s.title} dir="up" delay={i * 0.08}>
               <article className="group relative h-full overflow-hidden rounded-3xl border border-border bg-card p-7 shadow-soft transition-all duration-500 hover:-translate-y-2 hover:shadow-elevated hover:border-secondary/50">
-                <div className="absolute -top-16 -left-16 size-40 rounded-full gradient-primary opacity-0 blur-2xl transition group-hover:opacity-20" />
-                <div className="relative grid place-items-center size-16 rounded-2xl bg-gradient-to-br from-secondary/10 to-accent/20 text-secondary transition group-hover:scale-110 group-hover:from-secondary group-hover:to-primary group-hover:text-white">
+                <div className="absolute top-2 left-2 size-16 rounded-full gradient-primary opacity-0 blur-2xl transition group-hover:opacity-20 overflow-hidden" />
+                <div className="relative grid place-items-center size-16 rounded-2xl bg-gradient-to-br from-secondary/10 to-accent/20 text-secondary transition group-hover:scale-110 group-hover:from-secondary group-hover:to-primary group-hover:text-white mx-auto sm:mx-0">
                   <s.icon className="size-8" strokeWidth={1.75} />
                 </div>
-                <h3 className="mt-6 text-xl font-black text-navy leading-snug">{s.title}</h3>
-                <p className="mt-3 text-sm text-navy-light leading-loose">{s.desc}</p>
+                <h3 className="mt-6 text-xl font-black text-navy leading-snug text-center sm:text-right">{s.title}</h3>
+                <p className="mt-3 text-sm text-navy-light leading-loose mx-auto sm:mx-0">{s.desc}</p>
                 <a
                   href={SITE.whatsapp.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-secondary hover:text-primary"
+                  className="mt-5 flex justify-center sm:justify-right sm:inline-flex items-center  gap-1.5 text-sm font-bold text-secondary hover:text-primary"
                 >
                   استشارة مجانية
                   <ArrowLeft className="size-4 transition group-hover:-translate-x-1" />

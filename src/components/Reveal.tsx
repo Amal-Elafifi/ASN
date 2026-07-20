@@ -1,13 +1,14 @@
 import { motion, type Variants } from "framer-motion";
 import type { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 type Dir = "up" | "left" | "right" | "scale" | "none";
 
 const variants: Record<Dir, Variants> = {
-  up: { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } },
-  left: { hidden: { opacity: 0, x: -40 }, show: { opacity: 1, x: 0 } },
-  right: { hidden: { opacity: 0, x: 40 }, show: { opacity: 1, x: 0 } },
-  scale: { hidden: { opacity: 0, scale: 0.92 }, show: { opacity: 1, scale: 1 } },
+  up: { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } },
+  left: { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } },
+  right: { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } },
+  scale: { hidden: { opacity: 0, scale: 0.96 }, show: { opacity: 1, scale: 1 } },
   none: { hidden: { opacity: 0 }, show: { opacity: 1 } },
 };
 
@@ -24,7 +25,7 @@ export function Reveal({
 }) {
   return (
     <motion.div
-      className={className}
+      className={cn("w-full max-w-full overflow-hidden", className)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-80px" }}

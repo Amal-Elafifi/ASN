@@ -10,17 +10,17 @@ const slides = [
   {
     img: hero1,
     headline: "حلول متكاملة للعمليات اللوجستية، مع أفضل شركة شحن دولي بترخيص IATA",
-    kicker: "شحن دولي • تخليص جمركي",
+    kicker: "شركات شحن دولي ",
   },
   {
     img: hero2,
     headline: "أسرع طريق استيراد وتصدير وتخليص جمركي في منصة واحدة",
-    kicker: "جوي • بحري • بري",
+    kicker: "مخلص جمركي - إياتا",
   },
   {
     img: hero3,
     headline: "العالم بين يديك.. الاستيراد والتصدير أسهل مع ASN الحاصلة على ترخيص IATA",
-    kicker: "شبكة عالمية",
+    kicker: "شركة استيراد وتصدير - IATA",
   },
 ];
 
@@ -36,7 +36,7 @@ export function Hero() {
   const prev = () => setI((v) => (v - 1 + slides.length) % slides.length);
 
   return (
-    <section id="home" className="relative h-[100svh] min-h-[600px] w-full overflow-hidden bg-navy">
+    <section id="home" className="relative h-[100svh] min-h-[600px] w-full overflow-hidden bg-navy isolate">
       <AnimatePresence mode="sync">
         {slides.map((s, idx) =>
           idx === i ? (
@@ -57,7 +57,7 @@ export function Hero() {
                 fetchPriority={idx === 0 ? "high" : "auto"}
               />
               <div className="absolute inset-0 bg-gradient-to-l from-navy/85 via-navy/55 to-navy/30" />
-              <div className="absolute inset-0" style={{ background: "radial-gradient(80% 60% at 80% 30%, transparent 0%, rgba(14,42,71,0.6) 100%)" }} />
+              <div className="absolute inset-0 overflow-hidden" style={{ background: "radial-gradient(80% 60% at 80% 30%, transparent 0%, rgba(14,42,71,0.6) 100%)" }} />
             </motion.div>
           ) : null
         )}
@@ -78,7 +78,7 @@ export function Hero() {
                   <span className="size-1.5 rounded-full bg-accent animate-pulse" />
                   {slides[i].kicker}
                 </span>
-                <h1 className="mt-6 text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.25]">
+                <h1 className="mt-6 text-[1.7rem] leading-[1.35] sm:text-5xl lg:text-6xl font-black text-white sm:leading-[1.25]">
                   {slides[i].headline}
                 </h1>
               </motion.div>
@@ -88,20 +88,20 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="mt-8 flex flex-wrap gap-3"
+              className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center"
             >
               <a
                 href={SITE.whatsapp.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl gradient-primary px-6 py-3.5 text-sm sm:text-base font-bold text-white shadow-elevated transition hover:-translate-y-0.5"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl gradient-primary px-6 py-3.5 text-sm sm:w-auto sm:text-base font-bold text-white shadow-elevated transition hover:-translate-y-0.5"
               >
                 <MessageCircle className="size-5" />
                 استشارة مجانية
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-xl glass-dark px-6 py-3.5 text-sm sm:text-base font-bold text-white transition hover:bg-white/20"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl glass-dark px-6 py-3.5 text-sm sm:w-auto sm:text-base font-bold text-white transition hover:bg-white/20"
               >
                 تواصل معنا
               </a>

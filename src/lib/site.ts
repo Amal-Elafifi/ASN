@@ -4,6 +4,7 @@ export const SITE = {
   phones: [
     { display: "+20 109 992 0438", href: "tel:+201099920438" },
     { display: "+20 100 180 3403", href: "tel:+201001803403" },
+    { display: "+20 101 994 4112", href: "tel:+201019944112" },
   ],
   email: "contact@asn-eg.com",
   whatsapp: {

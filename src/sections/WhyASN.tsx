@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/Reveal";
 import { Check, Award } from "lucide-react";
 import worldMap from "@/assets/world-map.jpg";
-
+import IATA from "@/assets/iata.webp";
 const features = [
   "ترخيص واعتماد IATA الدولي",
   "إجراءات أمان عالية لسلامة البضائع والشحنات",
@@ -27,8 +27,8 @@ export function WhyASN() {
       <div className="container-asn relative">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <Reveal dir="right">
-            <span className="inline-block text-xs font-black tracking-widest text-accent uppercase">Why ASN</span>
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-white">
+            <span className="block sm:inline-block text-xs font-black tracking-widest text-accent uppercase text-center sm:text-right">Why ASN</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-white text-center sm:text-right">
               لماذا <span className="text-accent">ASN؟</span>
             </h2>
             <p className="mt-6 text-white/80 leading-loose">
@@ -36,10 +36,11 @@ export function WhyASN() {
             </p>
 
             <div className="mt-10 relative overflow-hidden rounded-3xl glass-dark p-8">
-              <div className="absolute -top-8 -left-8 grid place-items-center size-28 rounded-full bg-accent/20 blur-2xl" />
+              <div className="absolute -top-4 -left-4 grid place-items-center size-20 rounded-full bg-accent/20 blur-2xl overflow-hidden" />
               <div className="relative flex items-center gap-5">
                 <div className="grid place-items-center size-20 rounded-2xl bg-white text-primary shadow-glow">
-                  <Award className="size-10" strokeWidth={1.75} />
+                  <img src= {IATA} className="md:w-15 w-12" />
+                  {/* <Award className="size-10" strokeWidth={1.75} /> */}
                 </div>
                 <div>
                   <p className="text-xs font-bold text-accent tracking-wider uppercase">اعتماد دولي</p>

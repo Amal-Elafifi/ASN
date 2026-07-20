@@ -42,11 +42,11 @@ export function OurMessage() {
             <Reveal key={c.title} dir="up" delay={i * 0.15}>
               <div className="group relative h-full overflow-hidden rounded-3xl bg-white border border-border p-8 shadow-soft transition hover:-translate-y-2 hover:shadow-elevated">
                 <div className="absolute top-0 right-0 h-1.5 w-full gradient-primary scale-x-0 origin-right transition-transform duration-500 group-hover:scale-x-100" />
-                <div className="grid place-items-center size-16 rounded-2xl gradient-primary text-white shadow-soft">
+                <div className="grid place-items-center  size-16 rounded-2xl gradient-primary text-white shadow-soft mx-auto sm:mx-0">
                   <c.icon className="size-8" strokeWidth={1.75} />
                 </div>
-                <h3 className="mt-6 text-xl font-black text-navy">{c.title}</h3>
-                <p className="mt-3 text-sm text-navy-light leading-loose">{c.desc}</p>
+                <h3 className="mt-6 text-xl font-black text-navy text-center sm:text-right">{c.title}</h3>
+                <p className="mt-3 text-sm text-navy-light leading-loose text-center sm:text-right">{c.desc}</p>
               </div>
             </Reveal>
           ))}

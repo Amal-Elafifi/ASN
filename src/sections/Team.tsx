@@ -1,13 +1,15 @@
 import { Reveal } from "@/components/Reveal";
 import teamImg from "@/assets/team.jpg";
-import { FileText, ClipboardCheck, FolderCheck, Stamp, Ship, PackageCheck } from "lucide-react";
+import { FileText, ClipboardCheck, FolderCheck, Stamp, Ship, PackageCheck, PlaneTakeoff, BellRing } from "lucide-react";
 
 const timeline = [
   { icon: FileText, label: "استلام المستندات" },
   { icon: ClipboardCheck, label: "مراجعة البيانات" },
-  { icon: FolderCheck, label: "إعداد الملفات" },
+  { icon: FolderCheck, label: "إعداد الملفات" }, 
+  { icon: PlaneTakeoff, label: "حجز الشحنة مع خط الطيران" },
   { icon: Stamp, label: "التخليص الجمركي" },
   { icon: Ship, label: "خروج الشحنة" },
+  { icon: BellRing, label: "إخطار المرسل إليه" },
   { icon: PackageCheck, label: "التسليم" },
 ];
 
@@ -18,8 +20,8 @@ export function Team() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
             <Reveal dir="right">
-              <span className="inline-block text-xs font-black tracking-widest text-secondary uppercase">Work Team</span>
-              <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-navy">
+              <span className="block sm:inline-block  text-xs font-black tracking-widest text-secondary uppercase text-center sm:text-right">Work Team</span>
+              <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-navy text-center sm:text-right">
                 فريق <span className="text-gradient">العمل</span>
               </h2>
               <div className="mt-6 space-y-4 text-navy-light leading-loose text-[15px] sm:text-base">
@@ -49,13 +51,13 @@ export function Team() {
           <div className="relative">
             <div className="absolute top-8 right-8 left-8 h-0.5 bg-divider hidden md:block" />
             <div className="absolute top-8 right-8 h-0.5 gradient-primary hidden md:block" style={{ width: "calc(100% - 4rem)" }} />
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-4">
               {timeline.map((step, idx) => (
                 <Reveal key={step.label} dir="up" delay={idx * 0.1}>
                   <div className="relative group text-center">
                     <div className="relative mx-auto grid place-items-center size-16 rounded-2xl gradient-primary text-white shadow-elevated transition group-hover:scale-110">
                       <step.icon className="size-7" strokeWidth={1.75} />
-                      <span className="absolute -top-2 -right-2 grid place-items-center size-6 rounded-full bg-white text-secondary text-[11px] font-black shadow-soft">
+                      <span className="absolute -top-2 -right-2 grid gap-y-2 sm:gap-y-0 place-items-center size-6 rounded-full bg-white text-secondary text-[11px] font-black shadow-soft">
                         {idx + 1}
                       </span>
                     </div>
